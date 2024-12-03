@@ -1,0 +1,314 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and global styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 0 20px;
+  min-height: 100vh;
+}
+
+/* Header styling */
+header {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #ff3333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation styling */
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  background-color: #ff3333;
+  color: #ffffff;
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Content styling */
+.content {
+  justify-items: center; /* Center items horizontally */
+  background-color: #2d2d2d;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Directory category styling */
+.content section {
+  background-color: #363636;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  transition: transform 0.3s ease;
+}
+
+.content section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h2 {
+  color: #ff3333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #444;
+}
+
+h3 {
+  color: #ff3333;
+  margin: 25px 0 15px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #444;
+}
+
+/* Directory links styling */
+.content a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 15px;
+  background-color: #cc0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.content a:hover {
+  background-color: #ff3333;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Separator styling */
+.content b {
+  color: #666;
+  margin: 0 5px;
+  font-size: 1.2rem;
+}
+
+/* Store page specific styling */
+.store-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.store-items li {
+  background-color: #363636;
+  padding: 20px;
+  border-radius: 8px;
+  list-style: none;
+}
+
+button {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff3333;
+}
+
+/* Donation section styling */
+.content p {
+  margin: 10px 0;
+  word-break: break-all;
+}
+
+.content p b {
+  color: #ff3333;
+  margin-right: 10px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  #nav-menu.show {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #444;
+  }
+
+  .content {
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  .content section {
+    padding: 15px;
+    text-align: left;
+  }
+
+  .content a {
+    display: inline-block;
+    width: auto;
+    margin: 1px;
+    padding: 10px 7px;
+    font-size:0.85rem;
+  }
+}
+
+
+
+/* Small screen optimization */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .store-items {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  .menu-icon,
+  nav,
+  button {
+    display: none;
+  }
+
+  .content {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Container for iframes */
+.content {
+  display: ;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between iframes */
+  padding: 20px;
+  box-sizing: border-box; /* Prevents padding from breaking the layout */
+}
+
+/* Style for the iframes */
+.content iframe {
+  width: 100%;  /* Make iframe fill its container */
+  max-width: 300px;  /* Maximum width */
+  height: 400px;  /* Fixed height */
+  border: none;  /* Remove borders */
+  border-radius: 8px;  /* Optional: rounded corners */
+  background-color: #363636;  /* Optional: background color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Optional: add a subtle shadow */
+}
+
+/* For smaller screens (like phones), show two iframes per row */
+@media (max-width: 768px) {
+  .content iframe {
+    width: 49%;  /* 2 iframes per row */
+    max-width: none;  /* Remove max-width to allow it to fit */
+    height: 400px;  /* Adjust height for smaller screens */
+    justify-items: center; 
+  }
+}
