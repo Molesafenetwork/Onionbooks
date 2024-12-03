@@ -1,0 +1,87 @@
+{
+  "site": {
+    "title": "Onionbooks: Curated List of .Onion Sites",
+    "description": "Browse a curated collection of anonymous .onion sites on the Tor network. A secure and privacy centerd directory, featuring only trusted and privacy focused resources & our confirmed onion sites.",
+    "url": "https://isosecure.net",
+    "keywords": [
+      "onion directory",
+      "privacy-focused resources",
+      "anonymous .onion sites",
+      "Tor network directory",
+      "secure browsing",
+      "dark web directory",
+      "mole safe networking",
+      "msn",
+      "isosecure",
+      "onionbooks",
+      "msnonionbooks",
+      "esims",
+      "no id esims",
+      "clandestine"
+      
+    ],
+    "author": "mole safe networking",
+    "robots": "",
+    "canonical": "https://msnonionbook.glitch.me",
+    "language": "en",
+    "privacy_policy": "https://yourglitchproject.glitch.me/privacy-policy",
+    "terms_of_service": "https://yourglitchproject.glitch.me/terms-of-service"
+  },
+  "social_media": {
+    "og": {
+      "title": "OnionBooks: Curated List of .Onion Sites",
+      "description": "A curated directory of anonymous .onion sites on the Tor network, ensuring your privacy while browsing secure resources.",
+      "image": "https://yourglitchproject.glitch.me/images/privacy-logo.jpg",
+      "url": "https://msnonionbook.glitch.me",
+      "type": "website"
+    }
+  },
+  "structured_data": {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "OnionBooks",
+    "url": "https://yourglitchproject.glitch.me",
+    "description": "Curated directory of anonymous .onion websites for Tor network users, with a focus on privacy and security.",
+    "keywords": ["onion sites", "Tor directory", "anonymous resources", "privacy-focused directories"],
+    "creator": {
+      "@type": "Organization",
+      "name": "Privacy Advocates",
+      "url": "glitch-default"
+    },
+    "image": "https://yourglitchproject.glitch.me/images/privacy-logo.jpg",
+    "logo": "https://yourglitchproject.glitch.me/images/logo.jpg"
+  },
+  "anonymity": {
+    "focus": "This site prioritizes your privacy. No user tracking, no cookies, no personal information collection.",
+    "tracking": "false",
+    "cookies": "false",
+    "data_collection": "false",
+    "exit_node_information": "Not stored",
+    "third_party_requests": "None"
+  },
+  "onion_sites": {
+    "category": "onion sites directory",
+    "description": "Browse a list of verified .onion websites focused on privacy and security, including anonymous forums, stores, and more.",
+    "categories": [
+      "Privacy Resources",
+      "Anonymous Stores",
+      "Secure Communication",
+      "Whistleblower Protection"
+    ],
+    "access": "Accessible only via Tor for privacy and security.",
+    "example_onion_sites": [
+      {
+        "name": "abacus",
+        "url": "http://abacuseeettcn3n2zxo7tqy5vsxhqpha2jtjqs7cgdjzl2jascr4liad.onion/",
+        "category": "onion market",
+        "description": "abacus market a way to find services mostly drugs online"
+      },
+      {
+        "name": "Dread",
+        "url": "http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/",
+        "category": "onion fourm",
+        "description": "a fourm "
+      }
+    ]
+  }
+}
