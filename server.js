@@ -1,29 +1,21 @@
 const express = require("express");
 const path = require("path");
-const requestIp = require("request-ip");
 const fs = require("fs");
 
 const app = express();
 const port = 3000;
 
-// Middleware
 app.use(express.static(path.join(__dirname, "public")));
 
-// Serve static files from the "public" folder
+
 app.use(express.static(path.join(__dirname, "public")));
 
-// Use request-ip middleware for IP geolocation
-app.use(requestIp.mw());
-
-// Create directory if not exists
 const createDirectory = () => {
   if (!fs.existsSync("./.data")) {
     fs.mkdirSync("./.data");
   }
 };
 
-
-// Routes
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "index.html"));
 });
